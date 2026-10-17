@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <title><%= titulo %></title>
+    </head>
+    <body class="bg-light">
+        <!-- Menú de Navegación amigable con Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Aprendiendo Node.js</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/">Inicio</a>
+                    <a class="nav-link active" href="/servicios">Servicios</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <main class="container my-5">
+            <div class="p-5 mb-4 bg-white rounded-3 shadow-sm border">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold text-primary">Nuestros Servicios</h1>
+                    <p class="col-md-8 fs-4 text-muted">Ofrecemos una variedad de servicios para ayudarte a aprender y crecer en el mundo del desarrollo web con Node.js y Express.</p>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item">Desarrollo de aplicaciones web dinámicas</li>
+                        <li class="list-group-item">Integración con bases de datos</li>
+                        <li class="list-group-item">Implementación de APIs RESTful</li>
+                        <li class="list-group-item">Asesoramiento en buenas prácticas de desarrollo</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center py-4 my-4 border-top text-muted">
+            &copy; <%= new Date().getFullYear() %> - Mi Primer Servidor Fullstack
+        </footer>
+
+        <!-- JS de Bootstrap -->
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
